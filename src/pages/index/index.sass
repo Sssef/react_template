@@ -1,12 +1,26 @@
 @import "vars"
 @import "./src/fonts/ionicons/ionicons.sass"
 
+*::-webkit-input-placeholder
+	color: $grey-l
+	opacity: 1
+
+*:-moz-placeholder
+	color: $grey-l
+	opacity: 1
+
+*::-moz-placeholder
+	color: $grey-l
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $grey-l
+	opacity: 1
+
 html,
 body
     margin: 0
     padding: 0
-    height: 100vh
-    width: 100vw
 
 body
     color: $dark
@@ -14,6 +28,10 @@ body
     font-size: 2em
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
-    color: inherit
+    font-family: $f-head
+    margin: 0
+    padding: 0
+
+
 
 @import "media"
