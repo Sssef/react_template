@@ -1,9 +1,28 @@
 @import "../../pages/index/vars"
 
 .header
-    color: inherit
+    color: $dark
     text-align: center
-    h1
-        color: $dark
-        margin: 1em
-        font-family: $f-head
+    font-family: $f-content, sans-serif
+    position: relative
+    flex-direction: column
+    right: 0
+    bottom: 0
+    height: 100vh
+    width: 100vw
+    .header__top
+        background-image: url("./header_bg.jpg")
+        height: 15rem
+        .header__top-container
+            margin: 0 5% 0
+            padding-top: 1.125rem
+            width: 90%
+            position: relative
+h1
+    margin: 1rem
+    font-family: $f-head, sans-serif
+    line-height: 7.5rem
+    font-size: 5rem
+    //text-transform: uppercase
+.slogan
+    font-size: 1.1rem

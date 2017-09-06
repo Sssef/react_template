@@ -1,1 +1,19 @@
 @import "../../pages/index/vars.sass"
+
+.btn, input[type='submit']
+    display: inline-block
+    font-size: 1.1rem
+    cursor: pointer
+    color: $dark
+    background-color: transparent
+    border: 3px solid $dark
+    text-transform: uppercase
+    font-family: $f-default
+    text-decoration: none
+    transition: .4s all ease-in-out
+    padding: .75rem 0
+    margin: 2.125rem 0
+    width: 18rem
+    &:hover, &:focus, &:active
+        background-color: $dark
+        color: $white

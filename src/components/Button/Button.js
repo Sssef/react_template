@@ -4,7 +4,6 @@ import './Button.sass';
 
 class Button extends React.Component {
 
-
     render() {
         const Tag = this.props.href ? 'a' : 'button';
         const className = classify('btn', this.props.className) + (this.props.disabled ? ' disabled' : '');
